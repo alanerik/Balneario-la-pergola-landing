@@ -1,0 +1,30 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import bg1 from "../images/bg3.webp";
+import IntroSection from "@components/IntroSection.astro";
+import CtaSection from "@components/CtaSection.astro";
+import BrandsSection from "@components/BrandsSection";
+import ServicesMarquee from "@components/ServicesMarquee";
+import ServicesSection from "@components/ServicesSection";
+import Block from "@components/Block.astro";
+
+import contentData from "../types/intro.json";
+
+const dataintro = contentData.find((data) => data.page === "home");
+
+---
+
+<Layout
+  title="Balneario la pergola - Valeria del mar."
+  description="Pasa un verano unico en el mejor balneario de valeria del mar"
+>
+  <Hero title="La pergola beach club" image={bg1} />
+  <IntroSection content={dataintro} />
+  <CtaSection />
+  <Block />
+  <ServicesMarquee client:load />
+  <ServicesSection client:load />
+  <BrandsSection client:load />
+ 
+</Layout>

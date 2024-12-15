@@ -1,0 +1,57 @@
+---
+
+const { content } = Astro.props;
+---
+
+
+<section class="px-320 py-320 py-768 py-1024"
+style={`background-color: ${content.backgroundColor}; color: ${content.textColor};`}>
+
+<div class="flex flex-col justify-between xs:p-0 ">
+     
+<div class="flex flex-col px-768 px-1024">
+    
+    
+ <div class="head-320 head-768 head-1024 reveal">{content.title}</div>
+    
+    
+    <h2 class="h2-320 h2-768 h2-1024 reveal">{content.subtitle}</h2>
+</div>
+  
+
+
+<div class="flex lg:flex-row md:flex-row justify-between xs:flex-col px-768 px-1024 p-block-bottom-1024 p-block-bottom-768 ">
+    
+    <div class=" flex flex-1 p-block-320 p-block-768 p-block-1024">
+        <p class="paragraph-320 paragraph-768 paragraph-1024 reveal">{content.paragraph1}</p>
+    </div>
+   
+    <div class="flex flex-1 p-block-top-320 p-block-right-768 p-block-right-1024">
+        <p class="paragraph-320 paragraph-768 paragraph-1024 reveal">{content.paragraph2}</p>
+    </div>
+   
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+    
+
+    import ScrollReveal from 'scrollreveal';
+    
+    document.addEventListener("astro:page-load", () => {
+    
+    ScrollReveal().reveal(".reveal", {
+        delay: 375,
+    duration: 500,
+    reset: false
+    });
+  
+    });
+  
+  
+    
+  </script>

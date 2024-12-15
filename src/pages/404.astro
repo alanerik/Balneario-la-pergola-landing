@@ -1,0 +1,23 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Error from "@components/Error.astro";
+
+import bg1 from "../images/bg1.webp";
+import Hero from "@components/Hero.astro";
+
+export const prerender = true;
+---
+
+<Layout
+  description="web del balneario la pergola- valeria del mar"
+  title="Página no encontrada - Valneario la pergola"
+>
+  <Hero title="Error" image={bg1} />
+  <main>
+    <Error
+      error="404"
+      message="Página no encontrada"
+      contextMessage="¡Hola! Lo sentimos, pero no pudimos encontrar lo que buscabas. Verifica que la dirección URL sea correcta."
+    />
+  </main>
+</Layout>

@@ -1,0 +1,53 @@
+---
+import { MOBILE_MENU_CONTENT_ID } from "../consts/mobile-menu"
+
+
+---
+
+<button
+	id={Astro.props.id}
+	aria-expanded="false"
+	aria-controls={MOBILE_MENU_CONTENT_ID}
+	class:list={[
+		"hamburgerButton group relative flex  items-center justify-between lg:hidden text-link",
+		
+	]}
+	aria-label="Abrir menú de navegación"
+>
+
+
+	<span>Menú</span>
+</button>
+
+<script>
+	import { $, $$ } from "../lib/dom-selector"
+
+	const DISPLAY = {
+		hamburgerMenuClass: ".hamburgerButton",
+		open: "open",
+		hamburgerButtonClicked: "hamburgerButtonClicked",
+	} as const
+
+	document.addEventListener("astro:page-load", () => {
+		const hamburgerButton = $(DISPLAY.hamburgerMenuClass)
+
+		$$(DISPLAY.hamburgerMenuClass).forEach((button) => {
+			button.addEventListener("click", () => {
+				const hamburgerButton = $(DISPLAY.hamburgerMenuClass)!
+				hamburgerButton.classList.toggle(DISPLAY.open)
+				const isMenuOpen = hamburgerButton.classList.contains(DISPLAY.open)
+				hamburgerButton.setAttribute("aria-expanded", String(isMenuOpen))
+				hamburgerButton.setAttribute(
+					"aria-label",
+					isMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"
+				)
+				const hamburgerButtonClick = new CustomEvent(DISPLAY.hamburgerButtonClicked)
+				hamburgerButton.dispatchEvent(hamburgerButtonClick)
+			})
+		})
+		if (hamburgerButton?.classList?.contains(DISPLAY.open))
+			hamburgerButton?.classList?.remove(DISPLAY.open)
+	})
+</script>
+
+

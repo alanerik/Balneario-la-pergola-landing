@@ -1,0 +1,29 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/Hero.astro';
+import bg1 from '../images/bg1.webp'; 
+import IntroSection from '@components/IntroSection.astro';
+import BlockG from '@components/BlockG.astro';
+
+
+
+
+import contentData from '../types/intro.json';
+
+
+
+const dataintro = contentData.find((data) => data.page === 'gastronomia'); 
+
+---
+
+
+
+<Layout title="Gastronomia" description="disfruta de los mejores platos cerca del mar">
+
+<Hero title="Gastronomia" image={bg1} />
+
+
+<IntroSection content={dataintro}/>
+<BlockG/>
+
+</Layout>

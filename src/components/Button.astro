@@ -1,0 +1,39 @@
+---
+interface Props {
+  href: string;
+  rel?: string;
+  isExternal?: boolean;
+  class?: string;
+  text: string;
+  ariaDisabled?: boolean;
+}
+
+const {
+  href,
+  class: classList,
+  isExternal,
+  rel = "",
+  text,
+  ariaDisabled,
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+
+    "inline-block cursor-pointer border border-black",
+    
+    "p-[15px]",
+
+    "aria-disabled:pointer-events-none aria-disabled:border-[#666] aria-disabled:bg-[#666] aria-disabled:text-[#111]",
+    classList,
+  ]}
+  
+  rel={`${rel}${isExternal ? " nofollow noopener noreferrer external" : ""}`}
+  target={isExternal ? "_blank" : undefined}
+  aria-disabled={ariaDisabled ? "true" : undefined}
+  tabindex={ariaDisabled ? "-1" : undefined}
+>
+  {text}
+</a>

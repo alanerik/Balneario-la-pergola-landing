@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import Button from "@components/Button.astro";
+import bgcta from "../images/ctabg.webp";
+---
+
+<section
+  class="relative w-full lg:h-screen xs:h-[248px] px-320 py-320 py-768 py-1024 px-1024"
+>
+  <div class="absolute inset-0">
+    <div class="w-full relative overflow-hidden lg:h-screen xs:h-[248px]">
+      <Image
+        src={bgcta}
+        alt="imagen leyendo un libro en la playa"
+        loading="lazy"
+        class="w-full lg:h-screen object-cover object-bottom xs:h-[248px] reveal"
+      />
+    </div>
+  </div>
+
+  <div class="absolute inset-0">
+    <div
+      class="px-320 py-320 py-768 py-1024 px-1024 flex justify-end relative items-end w-full h-full"
+    >
+    <Button href="mailto:lapergola@telpin.com.ar" text="Reservar" isExternal class="bg-black text-white reveal"/>
+    </div>
+  </div>
+</section>

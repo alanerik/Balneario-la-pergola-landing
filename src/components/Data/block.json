@@ -1,0 +1,106 @@
+{
+
+  "cenas":
+[
+  {
+   
+    "title": "Noches de verano",
+    "subtitle": "Cenas y musica",
+    "paragraph1": " Ubicado en la zona centrica de valeria del mar, vivi una experiencia unica cenando y contemplando las estrellas frente al mar, En verano podes cenar de noche mientras disfrutas de la mejor musica y los mejores platos.   ",
+    "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+   
+    "image": "/g-3.webp" 
+  }
+
+
+],
+
+
+  "helados":
+[
+   {
+        
+        "title": "   ",
+        "subtitle": " Helados D’anunnzio ",
+        "paragraph1": "  En el balneario La Pérgola, frente al mar, se encuentra Helados D’Annunzio, un rincón donde los sabores artesanales se combinan con la frescura de la brisa marina. Disfrutá de una amplia variedad de helados tradicionales, perfectos para refrescarte mientras contemplás el horizonte costero. ",
+        "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+       "image": "/s-1.webp" 
+  
+      }
+  ],
+
+
+  "eventos":
+[
+
+  {
+    
+    
+    "title": "Eventos & Celebraciones",
+    "subtitle": "Fiestas",
+    "paragraph1": "En La Pérgola, tu casamiento se convierte en un evento inolvidable. Con vistas al mar y una atmósfera mágica, ofrecemos un entorno perfecto para una ceremonia íntima, seguido de una recepción personalizada que refleja tu estilo y esencia. ",
+    "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+    "image": "/e-2.webp" 
+  }
+
+
+
+
+],
+
+
+  "eventoscorp":
+[
+  {
+   
+    
+    "subtitle": "Eventos Corporativos",
+    "paragraph1": " La Pérgola ofrece el ambiente ideal para eventos corporativos frente al mar. Con espacios versátiles y equipados, brindamos un entorno profesional donde tus reuniones, lanzamientos o conferencias se destacan por su elegancia y atención personalizada. ",
+    "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+    "image": "/e-1.webp" 
+
+  }
+
+],
+
+
+  "gastronomia":
+[
+  {
+   
+    "title": "El Resto & bar de playa",
+    "subtitle": "Restaurante ",
+    "paragraph1": "El restaurante de La Pérgola cuenta con un deck exterior con vistas al mar para disfrutar al aire libre y una terraza trasera, ideal para momentos más íntimos y relajados. ",
+    "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+    
+    "image": "/g-3.webp" 
+  }
+
+],
+
+
+"chiringo":
+
+[
+
+  {
+    
+    "subtitle": "Bar de playa",
+    "paragraph1": " En el balneario La Pérgola, el bar de playa es el lugar ideal para disfrutar del sol y la brisa marina. Con cómodas reposeras y sombrillas, se puede saborear un refrescante trago mientras se contempla el horizonte azul. Es el punto perfecto para relajarse, compartir con amigos y vivir la esencia del verano en la costa.  ",
+    "background": "bg-white text-black px-320 px-768 px-1024 py-320 py-768 py-1024",
+    "image": "/g-1.webp" 
+  }
+
+
+
+]
+
+
+
+
+
+
+
+}
+  
+  

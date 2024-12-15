@@ -1,0 +1,24 @@
+---
+import CalendarIcon from "@icons/CalendarIcon.astro";
+import ClockIcon from "@icons/ClockIcon.astro";
+
+const { calendarInfo, timeInfo } = Astro.props;
+
+interface Props {
+  calendarInfo: string;
+  timeInfo: string;
+}
+---
+
+<section class="py-4 md:py-8 lg:py-12">
+  <div>
+    <div class="flex items-center space-x-2">
+      <CalendarIcon />
+      <p class="text-[#000] nav-font">{calendarInfo}</p>
+    </div>
+    <div class="flex items-center space-x-2">
+      <ClockIcon />
+      <p class="text-[#000] nav-font">{timeInfo}</p>
+    </div>
+  </div>
+</section>

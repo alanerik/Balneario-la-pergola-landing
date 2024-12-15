@@ -1,0 +1,38 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import IntroSection from "@components/IntroSection.astro";
+import Button from "@components/Button.astro";
+import bg1 from "../images/bg4.webp";
+import contentData from "../types/intro.json";
+
+const dataintro = contentData.find((data) => data.page === "contacto");
+---
+
+<Layout
+  title="Contacto"
+  description="Contacto para alquiler de carpas, sombrillas y reservas para eventos"
+>
+  <Hero title="Info & reservas" image={bg1} />
+
+  <IntroSection content={dataintro} />
+
+  <section class="px-320 py-320 py-768 py-1024">
+    <div
+      class="flex flex-row xs:flex-col md:flex-row w-full gap-4 items-center justify-center"
+    >
+      <div class=""></div>
+      <div class="li-pb-320 li-pb-768 li-pb-1024 reveal">
+        <Button href="mailto:lapergola@telpin.com.ar" text="Email" isExternal />
+      </div>
+
+      <div class="li-pb-320 li-pb-768 li-pb-1024 reveal">
+        <Button href="tel:02267636069" text="Telefono" isExternal />
+      </div>
+
+      <div class="li-pb-320 li-pb-768 li-pb-1024 reveal">
+        <Button href="https://wa.me/2267436335" text="Whatsapp" isExternal />
+      </div>
+    </div>
+  </section>
+</Layout>

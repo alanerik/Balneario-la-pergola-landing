@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "image": "/img-11.webp",
+      "title": "Recreación",
+      "description": "El balneario ofrece un completo programa de recreación infantil, con actividades diseñadas para entretener y estimular a los más chicos. Desde juegos en la playa y talleres creativos hasta deportes al aire libre, cada día es una aventura diferente que permite a los niños disfrutar del verano mientras desarrollan habilidades y hacen nuevos amigos en un entorno seguro y divertido."
+    },
+    {
+      "id": 2,
+      "image": "/img-10.webp",
+      "title": "Pileta",
+      "description": " Ubicada frente al mar, es el lugar perfecto para refrescarse y disfrutar del verano. Ideal para chicos y grandes, ofrece un espacio seguro y relajante donde el agua cristalina y el ambiente costero crean el escenario ideal para momentos inolvidables en familia."
+    },
+    {
+      "id": 3,
+      "image": "/img-9.webp",
+      "title": "Chiringo",
+      "description": "El chiringuito, situado en la arena, es el lugar ideal para disfrutar de una comida rápida y refrescante junto al mar. Ofrece una variedad de bebidas, panchos, y hamburguesas, perfectos para saciar el hambre sin alejarse de la playa. Con su ambiente relajado y vistas al océano, invita a disfrutar de un descanso bajo el sol."
+    },
+    {
+      "id": 4,
+      "image": "/img-8.webp",
+      "title": "Juegos",
+      "description": "El patio de juegos, ubicado sobre la arena, es un espacio pensado para que los niños disfruten al máximo de su día en el balneario. Con estructuras seguras y divertidas, los pequeños pueden trepar, deslizarse y explorar en un entorno junto al mar, mientras los padres disfrutan de la tranquilidad de tenerlos cerca y felices en un ambiente natural."
+    },
+
+    {
+        "id": 5,
+        "image": "/img-8.webp",
+        "title": "Est. Autos",
+        "description": "El balneario cuenta con un amplio estacionamiento, pensado para brindar comodidad y seguridad a sus visitantes, permite un fácil acceso a las instalaciones y asegura que los autos estén en un lugar cercano. Es la opción ideal para disfrutar del día sin preocupaciones y con la tranquilidad de tener el auto a pocos pasos de la playa."
+      },
+
+      {
+        "id": 6,
+        "image": "/img-8.webp",
+        "title": "Yoga",
+        "description": "Las clases de yoga en la playa ofrecen una experiencia única para conectar cuerpo y mente en un entorno natural incomparable. Realizadas al amanecer, permiten practicar posturas y respiración al ritmo de las olas y bajo el cielo abierto. Es una actividad ideal para quienes buscan relajación, equilibrio y energía positiva, rodeados de la paz y belleza del mar."
+      },
+
+      {
+        "id": 7,
+        "image": "/img-8.webp",
+        "title": "Masajes",
+        "description": "Los masajes brindan un momento de total relajación y renovación, perfectos para complementar un día de playa. Realizados por terapeutas profesionales, ofrecen diversas técnicas para aliviar tensiones y revitalizar el cuerpo. Con el sonido de las olas de fondo, cada sesión se convierte en una experiencia de bienestar profunda, ideal para desconectar y recargar energías."
+      },
+
+      {
+        "id":8 ,
+        "image": "/img-8.webp",
+        "title": "Vestuarios",
+        "description": "Los vestuarios están equipados para brindar total comodidad a los visitantes, con amplios espacios y duchas de agua caliente. Ideales para refrescarse después de un día de playa, ofrecen un lugar confortable para cambiarse y relajarse antes de continuar con el día."
+      }
+
+  ]
+  

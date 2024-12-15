@@ -1,0 +1,26 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/Hero.astro';
+import bg1 from '../images/bg4.webp'; 
+import IntroSection from '@components/IntroSection.astro';
+import introContentData from '../types/intro.json';
+import BlockE from '@components/BlockE.astro';
+import CtaEvent from '@components/CtaEvent.astro';
+
+
+const dataintro = introContentData.find((data) => data.page === 'eventos');
+
+---
+
+
+
+<Layout title="Eventos" description="vivi y disfruta de los mejores eventos en el balnerio la pergola">
+
+<Hero title="Eventos" image={bg1} />
+
+
+<IntroSection content={dataintro} />
+
+<BlockE/>
+<CtaEvent/>
+</Layout>

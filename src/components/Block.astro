@@ -1,0 +1,126 @@
+---
+import block from "../components/Data/block.json";
+import BlockBottom from "./BlockBottom.astro";
+---
+
+
+{block.cenas.map(({background, title, subtitle, paragraph1, image}) => (
+    
+
+
+
+<section class={background}
+>
+
+<div class="flex lg:flex-row md:flex-row justify-between xs:flex-col p-block-bottom-1024 p-block-bottom-768 ">
+    
+    
+    <div class="flex flex-col justify-between lg:w-[30.46875vw] md:w-[calc(50vw-135px)]">
+   
+    <div  class="head-320 head-768 head-1024 reveal">{title}</div>
+           
+    <h2 class="h2-320 h2-768 h2-1024 reveal">{subtitle}</h2>
+      
+  
+   
+    <div class=" p-block-320">
+
+    <p class="paragraph-320 paragraph-768 paragraph-1024 reveal">{paragraph1}</p>
+   
+    <BlockBottom calendarInfo="Abierto de jueves a domingo" timeInfo="8:30pm - 24:00pm "/>
+  
+    </div>
+    
+   </div>
+   
+
+
+    <div class="flex  p-block-top-320 ">
+        <div class="lg:w-[30.46875vw] lg:h-[35.416666666666664vw] md:w-[calc(50vw-135px)] md:h-[calc(75vw-202.5px)] xs:w-full xs:h-full relative"> 
+            <img src={image}
+             alt="imagen de eventos y gastronomia" 
+             class="lg:w-[30.46875vw] lg:h-[35.416666666666664vw] md:w-[calc(50vw-135px)] md:h-[calc(75vw-202.5px)] xs:w-full xs:h-full reveal" 
+             loading="lazy" /> 
+           
+            <div class="absolute bottom-[-2px] left-[-2px] w-[70%] h-[12%] bg-white"></div> 
+            <div class="absolute top-[-1px] left-[69%] h-[101%] w-[8%] bg-white"></div> 
+            <div class="absolute top-[-2px] right-[-2px] w-[30%] h-[45%] bg-white"></div> 
+    </div>
+    </div>
+
+</div>
+
+</section>
+<!--Fin section principal toma fondo y colores titulo subtitulo parrafo imagenes desde un json -->
+
+))
+}
+
+{block.helados.map(({background, subtitle, paragraph1, image}) => (
+
+<section
+  class={background}
+ 
+>
+<div class="flex lg:flex-row md:flex-row justify-between xs:flex-col-reverse p-block-bottom-1024 p-block-bottom-768 ">
+    
+    <div class="flex p-block-top-320 ">
+        <div class="lg:w-[30.46875vw] lg:h-[35.416666666666664vw] md:w-[calc(50vw-135px)] md:h-[calc(75vw-202.5px)] xs:w-full xs:h-full relative"> 
+            <img src={image}
+             alt="imagen de eventos y gastronomia" 
+             class="lg:w-[30.46875vw] lg:h-[35.416666666666664vw] md:w-[calc(50vw-135px)] md:h-[calc(75vw-202.5px)] xs:w-full xs:h-full reveal" 
+             loading="lazy" /> 
+           
+            <div class="absolute bottom-[-2px] left-[-2px] w-[70%] h-[12%] bg-white"></div> 
+            <div class="absolute top-[-1px] left-[69%] h-[101%] w-[8%] bg-white"></div> 
+            <div class="absolute top-[-2px] right-[-2px] w-[30%] h-[45%] bg-white"></div> 
+    </div>
+    </div>
+   
+    
+    <div class="flex flex-col justify-between lg:w-[30.46875vw] md:w-[calc(50vw-135px)]">
+    
+    
+     
+    <h2 class="h2-320 h2-768 h2-1024 reveal">{subtitle}</h2>
+
+    
+      
+  
+    
+    <div class=" p-block-320">
+    
+    
+    <p class="paragraph-320 paragraph-768 paragraph-1024 reveal">{paragraph1}</p>
+   
+    </div>
+  
+   </div>
+   
+
+
+</div>
+</section>
+
+))
+}
+
+
+<script>
+    
+
+    import ScrollReveal from 'scrollreveal';
+    
+    document.addEventListener("astro:page-load", () => {
+    
+    ScrollReveal().reveal(".reveal", {
+        delay: 375,
+    duration: 500,
+    reset: false
+    });
+
+    });
+
+
+    
+</script>

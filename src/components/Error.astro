@@ -1,0 +1,35 @@
+---
+
+
+
+const { error, message, contextMessage } = Astro.props
+---
+
+<section
+	class="m-auto flex w-full flex-wrap place-items-center items-center justify-center px-320 py-320 py-768 py-1024"
+>
+	
+		<img src="/logo.svg" alt="Logo Balneario la pergola"  />
+	
+	<div class="m-5 mt-16 text-center h2-320 h2-768 h2-1024">
+		
+			error {error}
+		
+			<p>{message}</p>
+	
+		<p class="mt-5 max-w-80 paragraph-320 paragraph-768 paragraph-1024">{contextMessage}</p>
+
+		<a class="mt-7 text-center" href="/" aria-label="volver a la página principal">
+			Ir al inicio
+        </a>
+	</div>
+</section>
+
+
+
+<style>
+    img{
+        height: clamp(120px, 9.6875vw, 9.6875vw);
+  width: clamp(120px, 9.6875vw, 9.6875vw);
+    }
+</style>

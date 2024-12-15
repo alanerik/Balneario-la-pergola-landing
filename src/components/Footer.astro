@@ -1,0 +1,96 @@
+---
+import FooterBottom from "@components/FooterBottom.astro";
+
+
+---
+
+
+
+<section class="px-320 py-320 px-768 py-768 px-1024 py-1024">
+
+<div class="flex xs:text-center mx-auto">
+
+<div class="flex lg:flex-row md:flex-row xs:flex-col w-full justify-between">
+
+<div class="xs:pb-[38px] justify-center flex">
+    <img src="/logo.svg" alt="Logo Balneario la pergola"  class="w-[120px] reveal"  />
+</div>
+
+<div class="order-2 column-pb-320">
+<ul>
+    <li class="li-pb-320 li-pb-768 li-pb-1024">
+        <a class=" text-320 p-links-320 text-768 text-1024 p-links-768 reveal"  rel="noreferrer noopener" href="https://www.facebook.com/balneariolapergola/" rel="noreferrer" target="_blank">Facebook</a>
+    </li>
+    <li class="li-pb-320 li-pb-768 li-pb-1024">
+        <a class=" text-320 p-links-320 text-768 text-1024 p-links-768 reveal"  rel="noreferrer noopener" href="https://www.instagram.com/balneariolapergola_/?hl=es-la" rel="noreferrer" target="_blank">Instagram</a>
+    </li>
+
+    <li class="li-pb-320 li-pb-768 li-pb-1024">
+        <a class=" text-320 p-links-320 text-768 text-1024 p-links-768 reveal"   rel="noreferrer noopener" href="https://www.instagram.com/balneariolapergola/" rel="noreferrer" target="_blank">Youtube</a>
+    </li>
+</ul>
+</div>
+
+<div class="order-1 column-pb-320">
+<ul>
+    <li class="li-pb-320 li-pb-768 li-pb-1024 ">
+        <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal"   rel="noreferrer noopener" href="https://maps.app.goo.gl/Ceab3WJzTw9U1Kvz9">Av. Costanera & Comodoro Py, Valeria del mar</a>
+    </li>
+    <li class="li-pb-320 li-pb-768 li-pb-1024">
+        <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal"   rel="noreferrer noopener"  href="https://wa.me/2267436335" >Tel. 2267436335</a>
+    </li>
+    <li class="li-pb-320 li-pb-768 li-pb-1024">
+        <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal"  rel="noreferrer noopener" href="mailto:lapergola@telpin.com.ar">lapergola@telpin.com.ar</a>
+    </li>
+</ul>
+</div>
+<div class="order-3 column-pb-320">
+    <ul>
+        <li class="li-pb-320 li-pb-768 li-pb-1024">
+            <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal" href="/Eventos">Eventos</a>
+        </li>
+        <li class="li-pb-320 li-pb-768 li-pb-1024">
+            <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal" href="/Gastronomia">Gastronomia</a>
+        </li>
+        <li class="li-pb-320 li-pb-768 li-pb-1024">
+            <a class="text-320 p-links-320 text-768 text-1024 p-links-768 reveal" href="/Contacto">Contacto</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+<FooterBottom />
+
+
+
+
+<script>
+    
+
+    import ScrollReveal from 'scrollreveal';
+    
+    document.addEventListener("astro:page-load", () => {
+    
+    ScrollReveal().reveal(".reveal", {
+        delay: 375,
+    duration: 500,
+    reset: false
+    });
+  
+    });
+  
+  
+    
+  </script>

@@ -1,0 +1,28 @@
+---
+import Button from "@components/Button.astro";
+---
+
+<section
+  class="flex-row items-center px-320 px-768 px-1024 py-320 py-768 py-1024 bg-[url('../images/bg2.webp')] bg-center bg-cover"
+>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="justify-start items-center gap-[275px] flex">
+      <div
+        class="flex-col justify-start items-start gap-[26px] inline-flex text-white"
+      >
+        <div class="text-3xl font-medium reveal">
+          ¿Queres organizar un evento?
+        </div>
+        <div class="text-lg font-normal reveal">
+          Envianos un mensaje y contanos tu idea.
+        </div>
+        <Button
+          href="https://wa.me/2267436335"
+          text="Reservar"
+          isExternal
+          class="border-white reveal"
+        />
+      </div>
+    </div>
+  </div>
+</section>

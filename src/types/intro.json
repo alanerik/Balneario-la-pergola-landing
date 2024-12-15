@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "page": "home",
+      "title": "El balneario",
+      "subtitle": "Restaurant & beach club",
+      "paragraph1": "Ubicado en el centro de Valeria del Mar es ideal para disfrutar el verano en familia. Su atmósfera relajada lo convierte en un lugar perfecto para descansar.",
+      "paragraph2": "La gastronomía es uno de los puntos fuertes del balneario, con una oferta de primer nivel que se adapta a todos los gustos. ",
+      "backgroundColor": "#F28705",
+      "textColor": "#fff"
+    },
+    {
+      "id": 2,
+      "page": "eventos",
+      "title": "Eventos",
+      "subtitle": "Una experiencia única",
+      "paragraph1": "En nuestro balneario, cada celebración es única. Desde casamientos románticos con la brisa marina hasta cumpleaños inolvidables rodeados de amigos y familia, creamos momentos mágicos frente al mar.",
+      "paragraph2": "Ya sea una boda íntima o un evento corporativo elegante, La Pérgola ofrece espacios versátiles y servicios personalizados. Nos encargamos de cada detalle para que tu celebración sea un éxito, en un entorno que combina naturaleza y confort.",
+      "backgroundColor": "#04bfad",
+      "textColor": "#fff"
+    },
+    {
+      "id": 3,
+      "page": "gastronomia",
+      "title": "Gastronomia",
+      "subtitle": "Una experiencia unica",
+      "paragraph1": "Disfrutá de una experiencia gastronómica que fusiona sabores tradicionales con toques modernos, ideal para cualquier momento del día. Nuestra propuesta se destaca por ingredientes frescos y una carta pensada para deleitar todos los paladares.",
+      "paragraph2": "En La Pérgola, te invitamos a disfrutar de una cocina fresca y variada, con platos que resaltan los sabores locales. Todo en un entorno único frente al mar, perfecto para relajarse y compartir.",
+      "backgroundColor": "#467302",
+      "textColor": "#fff"
+    },
+
+    {
+      "id": 4,
+      "page": "contacto",
+      "title": "Contacto",
+      "subtitle": "Info & reservas",
+      "paragraph1": "Ofrecemos alquiler de carpas y sombrillas para que disfrutes de un día perfecto en la playa. , nuestras carpas y sombrillas están diseñadas para brindar comodidad y protección contra el sol. Contáctanos para conocer disponibilidad y precios.",
+      "paragraph2": "Planifica tu evento con nosotros y aprovecha nuestra variedad de opciones de alquiler para eventos, tenemos todo lo que necesitas para hacer de tu evento una ocasión inolvidable. Consulta nuestros paquetes y servicios personalizados para tu celebración.",
+      "backgroundColor": "#BED7DC",
+      "textColor": "#000"
+    }
+  ]
+  
+  
+  
